@@ -1,0 +1,10 @@
+<button mat-button [matMenuTriggerFor]="menu">
+  <mat-icon
+    aria-hidden="false"
+    aria-label="Expand posts icon"
+    fontIcon="unfold_more"
+  ></mat-icon>
+</button>
+<mat-menu #menu="matMenu" xPosition="before">
+  <button mat-menu-item *ngFor="let title of titles">{{ title }}</button>
+</mat-menu>
